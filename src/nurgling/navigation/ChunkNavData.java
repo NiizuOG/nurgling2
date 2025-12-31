@@ -276,7 +276,7 @@ public class ChunkNavData {
         // This handles cases where gobHash changes but building is still there
         // Using name ensures we don't merge different portal types at same location
         if (existing == null && portal.localCoord != null && portal.gobName != null) {
-            existing = findPortalByPositionAndName(portal.localCoord, portal.gobName, 3); // 3 tile tolerance
+            existing = findPortalByPositionAndName(portal.localCoord, portal.gobName, 1); // 3 tile tolerance
         }
         if (existing != null) {
             // Preserve existing connection if new portal doesn't have one

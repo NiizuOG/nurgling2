@@ -74,10 +74,10 @@ public class ChunkPortal {
         }
 
         // Mine - distinguish between minehole (down) and ladder (up)
-        if (name.contains("minehole")) {
+        if (name.contains("minehole") || name.contains("cavein")) {
             return PortalType.MINEHOLE;
         }
-        if (name.contains("ladder")) {
+        if (name.contains("ladder") || name.contains("caveout")) {
             return PortalType.LADDER;
         }
 

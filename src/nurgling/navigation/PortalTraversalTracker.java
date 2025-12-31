@@ -78,6 +78,8 @@ public class PortalTraversalTracker {
         "minehole",
         "ladder",
         "stairs",
+        "cavein",
+        "caveout",
         // Buildings - clicking these teleports you inside
         "stonemansion",
         "logcabin",

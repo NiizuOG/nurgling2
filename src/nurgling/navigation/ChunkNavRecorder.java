@@ -4,6 +4,7 @@ import haven.*;
 import nurgling.NGameUI;
 import nurgling.NHitBox;
 import nurgling.NUtils;
+import nurgling.navigation.ChunkNavData.Direction;
 import nurgling.tasks.GateDetector;
 
 import java.util.*;
@@ -412,9 +413,8 @@ public class ChunkNavRecorder {
             // Check if gate is open using GateDetector logic
             return GateDetector.isDoorOpen(gob);
         }
-
-        // Mine holes
-        return lower.contains("/minehole");
+        // Mine holes and cave entrances/exits
+        return lower.contains("/minehole") || lower.contains("/cavein") || lower.contains("/caveout");
     }
 
     /**
