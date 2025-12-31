@@ -110,6 +110,8 @@ public class GateDetector {
                 "minehole",
                 "ladder",
                 "stairs",
+                "cavein",
+                "caveout",
                 "cellardoor");
         for (String door : listOfDoors) {
             if(gob.ngob.name.contains(door)) {
@@ -132,7 +134,8 @@ public class GateDetector {
                 {"gfx/terobjs/arch/timberhouse-door", "gfx/terobjs/arch/timberhouse"},
                 {"gfx/terobjs/minehole", "gfx/terobjs/ladder"},
                 {"gfx/terobjs/arch/upstairs", "gfx/terobjs/arch/downstairs"},
-                {"gfx/terobjs/arch/cellardoor", "gfx/terobjs/arch/cellarstairs"}
+                {"gfx/terobjs/arch/cellardoor", "gfx/terobjs/arch/cellarstairs"},
+                {"gfx/tiles/ridges/cavein", "gfx/tiles/ridges/caveout"}
         };
 
         for (String[] pair : pairs) {
